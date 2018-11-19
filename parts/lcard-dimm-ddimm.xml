@@ -1,6 +1,34 @@
 <partInstance>
   <targetPart>
-    <id>chip-ocmb</id>
+    <id>lcard-dimm-ddimm</id>
+    <attribute>
+      <id>MODEL</id>
+      <default>JEDEC</default>
+    </attribute>
+    <child_id>ocmb</child_id>
+    <child_id>spd</child_id>
+    <hidden_child_id>dimm_temp_sensor0</hidden_child_id>
+    <hidden_child_id>dimm_temp_sensor1</hidden_child_id>
+    <hidden_child_id>dimm_func_sensor</hidden_child_id>
+    <instance_name>ddimm</instance_name>
+    <is_root>true</is_root>
+    <parent>lcard-dimm</parent>
+    <parent_type>connector-dimmconn-ddimm</parent_type>
+    <position>0</position>
+    <type>lcard-dimm-ddimm</type>
+  </targetPart>
+  <targetPart>
+    <id>ocmb</id>
+    <child_id>omi</child_id>
+    <instance_name>ocmb</instance_name>
+    <is_root>true</is_root>
+    <parent>chip</parent>
+    <parent_type>lcard-dimm-ddimm</parent_type>
+    <position>0</position>
+    <type>chip-ocmb</type>
+  </targetPart>
+  <targetPart>
+    <id>omi</id>
     <attribute>
       <id>BUS_TYPE</id>
       <default>OMI</default>
@@ -11,25 +39,13 @@
     </attribute>
     <attribute>
       <id>DIRECTION</id>
-      <default>IN</default>
+      <default>INOUT</default>
     </attribute>
-    <attribute>
-      <id>MODEL</id>
-      <default>JEDEC</default>
-    </attribute>
-    <attribute>
-      <id>MRW_TYPE</id>
-      <default>NA</default>
-    </attribute>
-    <attribute>
-      <id>TYPE</id>
-      <default>OCMB_CHIP</default>
-    </attribute>
-    <instance_name>ocmb</instance_name>
+    <instance_name>omi</instance_name>
     <is_root>false</is_root>
     <parent>unit</parent>
     <position>-1</position>
-    <type>chip-ocmb</type>
+    <type>unit-ocmb</type>
   </targetPart>
   <targetPart>
 	<id>vr0.i2c-0</id>
@@ -283,24 +299,6 @@
     <parent>unit</parent>
     <position>-1</position>
     <type>unit-i2c-slave</type>
-  </targetPart>
-  <targetPart>
-    <id>lcard-dimm-ddimm</id>
-    <attribute>
-      <id>MODEL</id>
-      <default>JEDEC</default>
-    </attribute>
-    <child_id>ocmb</child_id>
-    <child_id>spd</child_id>
-    <hidden_child_id>dimm_temp_sensor0</hidden_child_id>
-    <hidden_child_id>dimm_temp_sensor1</hidden_child_id>
-    <hidden_child_id>dimm_func_sensor</hidden_child_id>
-    <instance_name>d	dimm</instance_name>
-    <is_root>true</is_root>
-    <parent>lcard-dimm</parent>
-    <parent_type>connector-dimmconn-ddimm</parent_type>
-    <position>0</position>
-    <type>lcard-dimm-ddimm</type>
   </targetPart>
   <targetPart>
     <id>spd</id>

@@ -4084,8 +4084,12 @@
       <default>OMI</default>
     </attribute>
     <attribute>
+         <id>DIRECTION</id>
+         <default>INOUT</default>
+    </attribute>
+    <attribute>
       <id>CDM_DOMAIN</id>
-      <default>FABRIC</default>
+      <default>MEM</default>
     </attribute>    
     <attribute>
       <id>CHIP_UNIT</id>
