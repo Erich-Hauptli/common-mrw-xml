@@ -18,11 +18,7 @@
 	</attribute>
 	<attribute>
 		<id>MODEL</id>
-		<default></default>
-	</attribute>
-	<attribute>
-		<id>MRU_ID</id>
-		<default>0</default>
+		<default/>
 	</attribute>
 	<attribute>
 		<id>MRW_TYPE</id>
@@ -30,7 +26,7 @@
 	</attribute>
 	<attribute>
 		<id>POSITION</id>
-		<default></default>
+		<default/>
 	</attribute>
 	<attribute>
 		<id>RESOURCE_IS_CRITICAL</id>
@@ -38,7 +34,7 @@
 	</attribute>
 	<attribute>
 		<id>TYPE</id>
-		<default></default>
+		<default/>
 	</attribute>
 </targetPart>
 <targetPart>
@@ -66,7 +62,7 @@
 	</attribute>
 	<attribute>
 		<id>MODEL</id>
-		<default></default>
+		<default/>
 	</attribute>
 	<attribute>
 		<id>MRW_TYPE</id>
@@ -106,7 +102,7 @@
 	</attribute>
 	<attribute>
 		<id>MODEL</id>
-		<default></default>
+		<default/>
 	</attribute>
 	<attribute>
 		<id>MRW_TYPE</id>

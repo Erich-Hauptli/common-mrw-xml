@@ -8,7 +8,7 @@
     </attribute>
     <attribute>
       <id>Upstream_Port</id>
-      <default></default>
+      <default/>
     </attribute>
     <instance_name>Virtual-Switch</instance_name>
     <is_root>true</is_root>
@@ -31,10 +31,6 @@
   <attribute>
     <id>CLASS</id>
     <default>UNIT</default>
-  </attribute>
-  <attribute>
-    <id>DECONFIG_GARDABLE</id>
-    <default>0</default>
   </attribute>
   <attribute>
     <id>DIRECTION</id>
