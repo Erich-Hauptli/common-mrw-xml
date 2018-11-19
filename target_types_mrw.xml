@@ -744,10 +744,25 @@
         </targetType>
 
 	<targetType>
+                <id>connector-dimmconn-ddimm</id>
+                <parent>connector</parent>
+                <parent_type>card-motherboard</parent_type>
+                <parent_type>card-daughtercard</parent_type>       
+        </targetType>
+
+
+	<targetType>
 		<id>lcard-dimm-jedec</id>
 		<parent>lcard-dimm</parent>
 		<parent_type>connector-dimmconn-ddr3_jedec</parent_type>
 	</targetType>
+
+	<targetType>
+		<id>lcard-dimm-ddimm</id>
+		<parent>lcard-dimm</parent>
+		<parent_type>connector-dimmconn-ddimm</parent_type>
+	</targetType>
+
 	<targetType>
 		<id>unit-ddr3-jedec</id>
 		<parent>unit</parent>
@@ -2592,6 +2607,11 @@
 		<parent>card-obuscard</parent>
 		<parent_type>slot-obusslot-generic</parent_type>
 	</targetType>
+	<targetType>
+		<id>card-ga100card-card</id>
+		<parent>card-obuscard</parent>
+		<parent_type>slot-obusslot-generic</parent_type>
+	</targetType>
 	<!-- Bus targets -->
 	<targetType>
 		<id>I2C</id>
@@ -2697,6 +2717,13 @@
 		</attribute>
 		<attribute>
 			<id>OBUS_CONFIG</id>
+		</attribute>
+	</targetType>
+	<targetType>
+		<id>OMI</id>
+		<attribute>
+			<id>CLASS</id>
+			<default>BUS</default>
 		</attribute>
 	</targetType>
 	<targetType>
@@ -4038,6 +4065,46 @@
          <default/>
     </attribute>            
 </targetType>
+
+<!--- OMI -->
+<targetType>
+    <id>unit-omi-power9</id>
+    <parent>unit</parent>
+</targetType>
+
+<targetType>
+    <id>unit-omi-axone</id>
+    <parent>unit-omi-power9</parent>
+    <attribute>
+        <id>MODEL</id>
+        <default>AXONE</default>
+    </attribute>
+    <attribute>
+      <id>BUS_TYPE</id>
+      <default>OMI</default>
+    </attribute>
+    <attribute>
+      <id>CDM_DOMAIN</id>
+      <default>FABRIC</default>
+    </attribute>    
+    <attribute>
+      <id>CHIP_UNIT</id>
+      <default>0</default>
+    </attribute>
+    <attribute>
+      <id>CLASS</id>
+      <default>UNIT</default>
+    </attribute>
+    <attribute>
+      <id>MRW_TYPE</id>
+      <default>NA</default>
+    </attribute>   
+    <attribute>
+      <id>TYPE</id>
+      <default>OMI</default>
+    </attribute>           
+</targetType>
+
 
 <!-- NV
      Nimbus : 6 per chip
