@@ -235,7 +235,7 @@
     <id>x1_port</id>
     <instance_name>x1_port</instance_name>
     <is_root>true</is_root>
-    <parent>mrw-chip</parent>
+    <parent>unit-pcie-bridge</parent>
     <parent_type>chip-stack6_x4</parent_type>
     <position>-1</position>
     <type>chip-x1_port</type>
@@ -268,7 +268,7 @@
     <id>x2_port</id>
     <instance_name>x2_port</instance_name>
     <is_root>true</is_root>
-    <parent>mrw-chip</parent>
+    <parent>unit-pcie-bridge</parent>
     <parent_type>chip-stack0_x16</parent_type>
     <parent_type>chip-stack1_x16</parent_type>
     <parent_type>chip-stack2_x16</parent_type>
@@ -307,7 +307,7 @@
     <id>x4_port</id>
     <instance_name>x4_port</instance_name>
     <is_root>true</is_root>
-    <parent>mrw-chip</parent>
+    <parent>unit-pcie-bridge</parent>
     <parent_type>chip-stack0_x16</parent_type>
     <parent_type>chip-stack1_x16</parent_type>
     <parent_type>chip-stack2_x16</parent_type>
@@ -346,7 +346,7 @@
     <id>x8_port</id>
     <instance_name>x8_port</instance_name>
     <is_root>true</is_root>
-    <parent>mrw-chip</parent>
+    <parent>unit-pcie-bridge</parent>
     <parent_type>chip-stack0_x16</parent_type>
     <parent_type>chip-stack1_x16</parent_type>
     <parent_type>chip-stack2_x16</parent_type>
@@ -384,7 +384,7 @@
     <id>x16_port</id>
     <instance_name>x16_port</instance_name>
     <is_root>true</is_root>
-    <parent>mrw-chip</parent>
+    <parent>unit-pcie-bridge</parent>
     <parent_type>chip-stack0_x16</parent_type>
     <parent_type>chip-stack1_x16</parent_type>
     <parent_type>chip-stack2_x16</parent_type>
