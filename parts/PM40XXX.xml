@@ -236,12 +236,6 @@
     <instance_name>x1_port</instance_name>
     <is_root>true</is_root>
     <parent>mrw-chip</parent>
-    <parent_type>chip-stack0_x16</parent_type>
-    <parent_type>chip-stack1_x16</parent_type>
-    <parent_type>chip-stack2_x16</parent_type>
-    <parent_type>chip-stack3_x16</parent_type>
-    <parent_type>chip-stack4_x16</parent_type>
-    <parent_type>chip-stack5_x16</parent_type>
     <parent_type>chip-stack6_x4</parent_type>
     <position>-1</position>
     <type>chip-x1_port</type>
@@ -359,7 +353,6 @@
     <parent_type>chip-stack3_x16</parent_type>
     <parent_type>chip-stack4_x16</parent_type>
     <parent_type>chip-stack5_x16</parent_type>
-    <parent_type>chip-stack6_x4</parent_type>
     <position>-1</position>
     <type>chip-x8_port</type>
 	<attribute>
@@ -398,7 +391,6 @@
     <parent_type>chip-stack3_x16</parent_type>
     <parent_type>chip-stack4_x16</parent_type>
     <parent_type>chip-stack5_x16</parent_type>
-    <parent_type>chip-stack6_x4</parent_type>
     <position>-1</position>
     <type>chip-x16_port</type>
 	<attribute>
