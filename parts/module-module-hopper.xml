@@ -5537,6 +5537,10 @@
       <id>MRW_TYPE</id>
       <default>PCI_CONFIGS</default>
     </attribute>
+    <attribute>
+      <id>TYPE</id>
+      <default></default>
+    </attribute>
     <child_id>phb0_x16</child_id>
     <instance_name>pec0_x16_config</instance_name>
     <is_root>false</is_root>
@@ -5556,6 +5560,10 @@
     <attribute>
       <id>MRW_TYPE</id>
       <default>PCI_CONFIGS</default>
+    </attribute>
+    <attribute>
+      <id>TYPE</id>
+      <default></default>
     </attribute>
     <child_id>phb1_x8</child_id>
     <child_id>phb2_x8</child_id>
@@ -5578,6 +5586,10 @@
       <id>MRW_TYPE</id>
       <default>PCI_CONFIGS</default>
     </attribute>
+    <attribute>
+      <id>TYPE</id>
+      <default></default>
+    </attribute>
     <child_id>phb3_x16</child_id>
     <instance_name>pec2_x16_config</instance_name>
     <is_root>false</is_root>
@@ -5597,6 +5609,10 @@
     <attribute>
       <id>MRW_TYPE</id>
       <default>PCI_CONFIGS</default>
+    </attribute>
+    <attribute>
+      <id>TYPE</id>
+      <default></default>
     </attribute>
     <child_id>phb3_x8</child_id>
     <child_id>phb4_x8</child_id>
@@ -5618,6 +5634,10 @@
     <attribute>
       <id>MRW_TYPE</id>
       <default>PCI_CONFIGS</default>
+    </attribute>
+    <attribute>
+      <id>TYPE</id>
+      <default></default>
     </attribute>
     <child_id>phb3_x4</child_id>
     <child_id>phb4_x4</child_id>
@@ -5810,6 +5830,10 @@
       <id>IOP_NUM</id>
       <default>0</default>
     </attribute>
+	<attribute>
+		<id>PCIE_LANE_GROUP</id>
+		<default>0</default>
+	</attribute>
     <instance_name>phb0_x16_bus</instance_name>
     <is_root>false</is_root>
     <parent>unit-pci-power9</parent>
@@ -5846,6 +5870,10 @@
       <id>IOP_NUM</id>
       <default>1</default>
     </attribute>
+	<attribute>
+		<id>PCIE_LANE_GROUP</id>
+		<default>0</default>
+	</attribute>
     <instance_name>phb1_x8_bus</instance_name>
     <is_root>false</is_root>
     <parent>unit-pci-power9</parent>
@@ -5882,6 +5910,10 @@
       <id>IOP_NUM</id>
       <default>1</default>
     </attribute>
+	<attribute>
+		<id>PCIE_LANE_GROUP</id>
+		<default>0</default>
+	</attribute>
     <instance_name>phb2_x8_bus</instance_name>
     <is_root>false</is_root>
     <parent>unit-pci-power9</parent>
@@ -5918,6 +5950,10 @@
       <id>IOP_NUM</id>
       <default>2</default>
     </attribute>
+	<attribute>
+		<id>PCIE_LANE_GROUP</id>
+		<default>0</default>
+	</attribute>
     <instance_name>phb03_x16_bus</instance_name>
     <is_root>false</is_root>
     <parent>unit-pci-power9</parent>
@@ -5954,6 +5990,10 @@
       <id>IOP_NUM</id>
       <default>2</default>
     </attribute>
+	<attribute>
+		<id>PCIE_LANE_GROUP</id>
+		<default>0</default>
+	</attribute>
     <instance_name>phb3_x8_bus</instance_name>
     <is_root>false</is_root>
     <parent>unit-pci-power9</parent>
@@ -5990,6 +6030,10 @@
       <id>IOP_NUM</id>
       <default>2</default>
     </attribute>
+	<attribute>
+		<id>PCIE_LANE_GROUP</id>
+		<default>0</default>
+	</attribute>
     <instance_name>phb4_x8_bus</instance_name>
     <is_root>false</is_root>
     <parent>unit-pci-power9</parent>
@@ -6026,6 +6070,10 @@
       <id>IOP_NUM</id>
       <default>2</default>
     </attribute>
+	<attribute>
+		<id>PCIE_LANE_GROUP</id>
+		<default>0</default>
+	</attribute>
     <instance_name>phb3_x4_bus</instance_name>
     <is_root>false</is_root>
     <parent>unit-pci-power9</parent>
@@ -6062,6 +6110,10 @@
       <id>IOP_NUM</id>
       <default>2</default>
     </attribute>
+	<attribute>
+		<id>PCIE_LANE_GROUP</id>
+		<default>0</default>
+	</attribute>
     <instance_name>phb4_x4_bus</instance_name>
     <is_root>false</is_root>
     <parent>unit-pci-power9</parent>
@@ -6098,6 +6150,10 @@
       <id>IOP_NUM</id>
       <default>2</default>
     </attribute>
+	<attribute>
+		<id>PCIE_LANE_GROUP</id>
+		<default>0</default>
+	</attribute>
     <instance_name>phb5_x8_bus</instance_name>
     <is_root>false</is_root>
     <parent>unit-pci-power9</parent>
