@@ -329,78 +329,6 @@
     <type>unit-i2c-slave</type>
   </targetPart>
   <targetPart>
-    <id>i2c-pmic0</id>
-    <attribute>
-      <id>BUS_TYPE</id>
-      <default>I2C</default>
-    </attribute>
-    <attribute>
-      <id>CHIP_UNIT</id>
-      <default>0</default>
-    </attribute>
-    <attribute>
-      <id>DIRECTION</id>
-      <default>IN</default>
-    </attribute>
-    <attribute>
-      <id>I2C_ADDRESS</id>
-      <default>0x90</default>
-    </attribute>
-    <attribute>
-      <id>I2C_ENGINE</id>
-      <default>0x00</default>
-    </attribute>
-    <attribute>
-      <id>I2C_PORT</id>
-      <default>0x00</default>
-    </attribute>
-    <attribute>
-      <id>TYPE</id>
-      <default>NA</default>
-    </attribute>
-    <instance_name>i2c-pmic0</instance_name>
-    <is_root>false</is_root>
-    <parent>unit</parent>
-    <position>-1</position>
-    <type>unit-i2c-slave</type>
-  </targetPart>
-  <targetPart>
-    <id>i2c-pmic1</id>
-    <attribute>
-      <id>BUS_TYPE</id>
-      <default>I2C</default>
-    </attribute>
-    <attribute>
-      <id>CHIP_UNIT</id>
-      <default>0</default>
-    </attribute>
-    <attribute>
-      <id>DIRECTION</id>
-      <default>IN</default>
-    </attribute>
-    <attribute>
-      <id>I2C_ADDRESS</id>
-      <default>0xC0</default>
-    </attribute>
-    <attribute>
-      <id>I2C_ENGINE</id>
-      <default>0x00</default>
-    </attribute>
-    <attribute>
-      <id>I2C_PORT</id>
-      <default>0x00</default>
-    </attribute>
-    <attribute>
-      <id>TYPE</id>
-      <default>NA</default>
-    </attribute>
-    <instance_name>i2c-pmic1</instance_name>
-    <is_root>false</is_root>
-    <parent>unit</parent>
-    <position>-1</position>
-    <type>unit-i2c-slave</type>
-  </targetPart>
-  <targetPart>
     <id>pmic0</id>
     <attribute>
       <id>MRW_TYPE</id>
@@ -409,7 +337,6 @@
     <instance_name>pmic0</instance_name>
     <is_root>false</is_root>
     <parent>mrw-chip</parent>
-    <child_id>i2c-pmic0</child_id>
     <position>-1</position>
     <type>chip-vreg-generic</type>
   </targetPart>
@@ -422,8 +349,6 @@
     <instance_name>pmic1</instance_name>
     <is_root>false</is_root>
     <parent>mrw-chip</parent>
-    <parent>mrw-chip</parent>
-    <child_id>i2c-pmic1</child_id>
     <position>-1</position>
     <type>chip-vreg-generic</type>
   </targetPart>
