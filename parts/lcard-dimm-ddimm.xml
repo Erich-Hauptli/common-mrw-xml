@@ -6,6 +6,8 @@
       <default>JEDEC</default>
     </attribute>
     <child_id>ocmb</child_id>
+    <child_id>pmic0</child_id>
+    <child_id>pmic1</child_id>
     <child_id>spd</child_id>
     <hidden_child_id>dimm_temp_sensor0</hidden_child_id>
     <hidden_child_id>dimm_temp_sensor1</hidden_child_id>
@@ -20,6 +22,9 @@
   <targetPart>
     <id>ocmb</id>
     <child_id>omi</child_id>
+    <child_id>i2c-ocmb</child_id>
+    <child_id>i2c-ts0</child_id>
+    <child_id>i2c-ts1</child_id>
     <instance_name>ocmb</instance_name>
     <is_root>true</is_root>
     <parent>chip</parent>
@@ -46,92 +51,6 @@
     <parent>unit</parent>
     <position>-1</position>
     <type>unit-ocmb</type>
-  </targetPart>
-  <targetPart>
-	<id>vr0.i2c-0</id>
-	<type>unit-i2c-slave</type>
-	<is_root>false</is_root>
-	<instance_name>vr0.i2c</instance_name>
-	<position>0</position>
-	<parent>mrw-unit</parent>
-	<attribute>
-		<id>BUS_TYPE</id>
-		<default>I2C</default>
-	</attribute>
-	<attribute>
-		<id>CHIP_UNIT</id>
-		<default>0</default>
-	</attribute>
-	<attribute>
-		<id>CLASS</id>
-		<default>UNIT</default>
-	</attribute>
-	<attribute>
-		<id>DIRECTION</id>
-		<default>IN</default>
-	</attribute>
-	<attribute>
-		<id>MODEL</id>
-		<default/>
-	</attribute>
-	<attribute>
-		<id>MRW_TYPE</id>
-		<default>NA</default>
-	</attribute>
-	<attribute>
-		<id>RESOURCE_IS_CRITICAL</id>
-		<default>0</default>
-	</attribute>
-	<attribute>
-		<id>TYPE</id>
-		<default>NA</default>
-	</attribute>
-	<attribute>
-			<id>I2C_ADDRESS</id>
-	</attribute>
-  </targetPart>
-  <targetPart>
-	<id>vr1.i2c-0</id>
-	<type>unit-i2c-slave</type>
-	<is_root>false</is_root>
-	<instance_name>vr1.i2c</instance_name>
-	<position>0</position>
-	<parent>mrw-unit</parent>
-	<attribute>
-		<id>BUS_TYPE</id>
-		<default>I2C</default>
-	</attribute>
-	<attribute>
-		<id>CHIP_UNIT</id>
-		<default>0</default>
-	</attribute>
-	<attribute>
-		<id>CLASS</id>
-		<default>UNIT</default>
-	</attribute>
-	<attribute>
-		<id>DIRECTION</id>
-		<default>IN</default>
-	</attribute>
-	<attribute>
-		<id>MODEL</id>
-		<default/>
-	</attribute>
-	<attribute>
-		<id>MRW_TYPE</id>
-		<default>NA</default>
-	</attribute>
-	<attribute>
-		<id>RESOURCE_IS_CRITICAL</id>
-		<default>0</default>
-	</attribute>
-	<attribute>
-		<id>TYPE</id>
-		<default>NA</default>
-	</attribute>
-	<attribute>
-			<id>I2C_ADDRESS</id>
-	</attribute>
   </targetPart>
   <targetPart>
     <id>dimm_func_sensor</id>
@@ -266,7 +185,7 @@
     <type>unit-ipmi-sensor</type>
   </targetPart>
   <targetPart>
-    <id>i2c-slave</id>
+    <id>i2c-ocmb</id>
     <attribute>
       <id>BUS_TYPE</id>
       <default>I2C</default>
@@ -281,6 +200,7 @@
     </attribute>
     <attribute>
       <id>I2C_ADDRESS</id>
+      <default>0x40</default>
     </attribute>
     <attribute>
       <id>I2C_ENGINE</id>
@@ -294,11 +214,218 @@
       <id>TYPE</id>
       <default>NA</default>
     </attribute>
-    <instance_name>i2c-slave</instance_name>
+    <instance_name>i2c-ocmb</instance_name>
     <is_root>false</is_root>
     <parent>unit</parent>
     <position>-1</position>
     <type>unit-i2c-slave</type>
+  </targetPart>
+  <targetPart>
+    <id>i2c-ts0</id>
+    <attribute>
+      <id>BUS_TYPE</id>
+      <default>I2C</default>
+    </attribute>
+    <attribute>
+      <id>CHIP_UNIT</id>
+      <default>0</default>
+    </attribute>
+    <attribute>
+      <id>DIRECTION</id>
+      <default>IN</default>
+    </attribute>
+    <attribute>
+      <id>I2C_ADDRESS</id>
+      <default>0x30</default>
+    </attribute>
+    <attribute>
+      <id>I2C_ENGINE</id>
+      <default>0x00</default>
+    </attribute>
+    <attribute>
+      <id>I2C_PORT</id>
+      <default>0x00</default>
+    </attribute>
+    <attribute>
+      <id>TYPE</id>
+      <default>NA</default>
+    </attribute>
+    <instance_name>i2c-ts0</instance_name>
+    <is_root>false</is_root>
+    <parent>unit</parent>
+    <position>-1</position>
+    <type>unit-i2c-slave</type>
+  </targetPart>
+  <targetPart>
+    <id>i2c-ts1</id>
+    <attribute>
+      <id>BUS_TYPE</id>
+      <default>I2C</default>
+    </attribute>
+    <attribute>
+      <id>CHIP_UNIT</id>
+      <default>0</default>
+    </attribute>
+    <attribute>
+      <id>DIRECTION</id>
+      <default>IN</default>
+    </attribute>
+    <attribute>
+      <id>I2C_ADDRESS</id>
+      <default>0x32</default>
+    </attribute>
+    <attribute>
+      <id>I2C_ENGINE</id>
+      <default>0x00</default>
+    </attribute>
+    <attribute>
+      <id>I2C_PORT</id>
+      <default>0x00</default>
+    </attribute>
+    <attribute>
+      <id>TYPE</id>
+      <default>NA</default>
+    </attribute>
+    <instance_name>i2c-ts1</instance_name>
+    <is_root>false</is_root>
+    <parent>unit</parent>
+    <position>-1</position>
+    <type>unit-i2c-slave</type>
+  </targetPart>
+  <targetPart>
+    <id>i2c-spd</id>
+    <attribute>
+      <id>BUS_TYPE</id>
+      <default>I2C</default>
+    </attribute>
+    <attribute>
+      <id>CHIP_UNIT</id>
+      <default>0</default>
+    </attribute>
+    <attribute>
+      <id>DIRECTION</id>
+      <default>IN</default>
+    </attribute>
+    <attribute>
+      <id>I2C_ADDRESS</id>
+      <default>0xA0</default>
+    </attribute>
+    <attribute>
+      <id>I2C_ENGINE</id>
+      <default>0x00</default>
+    </attribute>
+    <attribute>
+      <id>I2C_PORT</id>
+      <default>0x00</default>
+    </attribute>
+    <attribute>
+      <id>TYPE</id>
+      <default>NA</default>
+    </attribute>
+    <instance_name>i2c-spd</instance_name>
+    <is_root>false</is_root>
+    <parent>unit</parent>
+    <position>-1</position>
+    <type>unit-i2c-slave</type>
+  </targetPart>
+  <targetPart>
+    <id>i2c-pmic0</id>
+    <attribute>
+      <id>BUS_TYPE</id>
+      <default>I2C</default>
+    </attribute>
+    <attribute>
+      <id>CHIP_UNIT</id>
+      <default>0</default>
+    </attribute>
+    <attribute>
+      <id>DIRECTION</id>
+      <default>IN</default>
+    </attribute>
+    <attribute>
+      <id>I2C_ADDRESS</id>
+      <default>0x90</default>
+    </attribute>
+    <attribute>
+      <id>I2C_ENGINE</id>
+      <default>0x00</default>
+    </attribute>
+    <attribute>
+      <id>I2C_PORT</id>
+      <default>0x00</default>
+    </attribute>
+    <attribute>
+      <id>TYPE</id>
+      <default>NA</default>
+    </attribute>
+    <instance_name>i2c-pmic0</instance_name>
+    <is_root>false</is_root>
+    <parent>unit</parent>
+    <position>-1</position>
+    <type>unit-i2c-slave</type>
+  </targetPart>
+  <targetPart>
+    <id>i2c-pmic1</id>
+    <attribute>
+      <id>BUS_TYPE</id>
+      <default>I2C</default>
+    </attribute>
+    <attribute>
+      <id>CHIP_UNIT</id>
+      <default>0</default>
+    </attribute>
+    <attribute>
+      <id>DIRECTION</id>
+      <default>IN</default>
+    </attribute>
+    <attribute>
+      <id>I2C_ADDRESS</id>
+      <default>0xC0</default>
+    </attribute>
+    <attribute>
+      <id>I2C_ENGINE</id>
+      <default>0x00</default>
+    </attribute>
+    <attribute>
+      <id>I2C_PORT</id>
+      <default>0x00</default>
+    </attribute>
+    <attribute>
+      <id>TYPE</id>
+      <default>NA</default>
+    </attribute>
+    <instance_name>i2c-pmic1</instance_name>
+    <is_root>false</is_root>
+    <parent>unit</parent>
+    <position>-1</position>
+    <type>unit-i2c-slave</type>
+  </targetPart>
+  <targetPart>
+    <id>pmic0</id>
+    <attribute>
+      <id>MRW_TYPE</id>
+      <default>VOLTAGE_REGULATOR</default>
+    </attribute>
+    <instance_name>pmic0</instance_name>
+    <is_root>false</is_root>
+    <parent>mrw-chip</parent>
+    <child_id>i2c-pmic0</child_id>
+    <position>-1</position>
+    <type>chip-vreg-generic</type>
+  </targetPart>
+  <targetPart>
+    <id>pmic1</id>
+    <attribute>
+      <id>MRW_TYPE</id>
+      <default>VOLTAGE_REGULATOR</default>
+    </attribute>
+    <instance_name>pmic1</instance_name>
+    <is_root>false</is_root>
+    <parent>mrw-chip</parent>
+    <parent>mrw-chip</parent>
+    <child_id>i2c-pmic1</child_id>
+    <position>-1</position>
+    <type>chip-vreg-generic</type>
   </targetPart>
   <targetPart>
     <id>spd</id>
@@ -326,7 +453,7 @@
       <id>WRITE_PAGE_SIZE</id>
       <default>0x50</default>
     </attribute>
-    <child_id>i2c-slave</child_id>
+    <child_id>i2c-spd</child_id>
     <instance_name>spd</instance_name>
     <is_root>false</is_root>
     <parent>chip-vpd-device</parent>
