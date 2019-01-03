@@ -2036,7 +2036,7 @@
     <type>unit-fsi-proc</type>
   </targetPart>
   <targetPart>
-    <id>i2c-master-omi012</id>
+    <id>i2c-master-omi0123</id>
     <attribute>
       <id>BUS_TYPE</id>
       <default>I2C</default>
@@ -2051,24 +2051,24 @@
     </attribute>
     <attribute>
       <id>I2C_ENGINE</id>
-      <default>0x01</default>
+      <default>0x03</default>
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x00</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
       <default>NA</default>
     </attribute>
-    <instance_name>i2c-master-omi012</instance_name>
+    <instance_name>i2c-master-omi0123</instance_name>
     <is_root>false</is_root>
     <parent>unit</parent>
     <position>-1</position>
     <type>unit-i2c-master</type>
   </targetPart>
   <targetPart>
-    <id>i2c-master-omi345</id>
+    <id>i2c-master-omi4567</id>
     <attribute>
       <id>BUS_TYPE</id>
       <default>I2C</default>
@@ -2083,17 +2083,17 @@
     </attribute>
     <attribute>
       <id>I2C_ENGINE</id>
-      <default>0x01</default>
+      <default>0x03</default>
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x01</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
       <default>NA</default>
     </attribute>
-    <instance_name>i2c-master-omi345</instance_name>
+    <instance_name>i2c-master-omi4567</instance_name>
     <is_root>false</is_root>
     <parent>unit</parent>
     <position>-1</position>
@@ -2147,11 +2147,11 @@
     </attribute>
     <attribute>
       <id>I2C_ENGINE</id>
-      <default>0x01</default>
+      <default>0x02</default>
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x00</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2162,6 +2162,210 @@
     <parent>unit</parent>
     <position>-1</position>
     <type>unit-i2c-master</type>
+  </targetPart>
+<targetPart>
+  <id>i2c-master-hotplug</id>
+  <attribute>
+    <id>BUS_TYPE</id>
+    <default>I2C</default>
+  </attribute>
+  <attribute>
+    <id>CHIP_UNIT</id>
+    <default>1</default>
+  </attribute>
+  <attribute>
+    <id>CLASS</id>
+    <default>UNIT</default>
+  </attribute>
+  <attribute>
+    <id>DIRECTION</id>
+    <default>OUT</default>
+  </attribute>
+  <attribute>
+    <id>I2C_CONNECTION_TYPE</id>
+    <default>NA</default>
+  </attribute>
+  <attribute>
+    <id>I2C_ENGINE</id>
+    <default>0x02</default>
+  </attribute>
+  <attribute>
+    <id>I2C_PORT</id>
+    <default>0x01</default>
+  </attribute>
+  <attribute>
+    <id>MRW_TYPE</id>
+    <default>NA</default>
+  </attribute>
+  <attribute>
+    <id>PRIMARY_CAPABILITIES</id>
+    <default>
+      <field>
+        <id>supportsFsiScom</id>
+        <value>1</value>
+      </field>
+      <field>
+        <id>supportsXscom</id>
+        <value>1</value>
+      </field>
+      <field>
+        <id>supportsInbandScom</id>
+        <value>0</value>
+      </field>
+      <field>
+        <id>reserved</id>
+        <value>0</value>
+      </field>
+    </default>
+  </attribute>
+  <attribute>
+    <id>RESOURCE_IS_CRITICAL</id>
+    <default>0</default>
+  </attribute>
+  <attribute>
+    <id>TYPE</id>
+    <default>NA</default>
+  </attribute>
+  <instance_name>i2c-master-hotplug</instance_name>
+  <is_root>false</is_root>
+  <position>-1</position>
+  <type>unit-i2c-master</type>
+</targetPart>
+<targetPart>
+  <id>i2c-master-tpm</id>
+  <attribute>
+    <id>BUS_TYPE</id>
+    <default>I2C</default>
+  </attribute>
+  <attribute>
+    <id>CHIP_UNIT</id>
+    <default>0</default>
+  </attribute>
+  <attribute>
+    <id>CLASS</id>
+    <default>UNIT</default>
+  </attribute>
+  <attribute>
+    <id>DIRECTION</id>
+    <default>OUT</default>
+  </attribute>
+  <attribute>
+    <id>I2C_CONNECTION_TYPE</id>
+    <default>NA</default>
+  </attribute>
+  <attribute>
+    <id>I2C_ENGINE</id>
+    <default>0x02</default>
+  </attribute>
+  <attribute>
+    <id>I2C_PORT</id>
+    <default>0x00</default>
+  </attribute>
+  <attribute>
+    <id>MRW_TYPE</id>
+    <default>NA</default>
+  </attribute>
+  <attribute>
+    <id>PRIMARY_CAPABILITIES</id>
+    <default>
+      <field>
+        <id>supportsFsiScom</id>
+        <value>1</value>
+      </field>
+      <field>
+        <id>supportsXscom</id>
+        <value>1</value>
+      </field>
+      <field>
+        <id>supportsInbandScom</id>
+        <value>0</value>
+      </field>
+      <field>
+        <id>reserved</id>
+        <value>0</value>
+      </field>
+    </default>
+  </attribute>
+  <attribute>
+    <id>RESOURCE_IS_CRITICAL</id>
+    <default>0</default>
+  </attribute>
+  <attribute>
+    <id>TYPE</id>
+    <default>NA</default>
+  </attribute>
+  <instance_name>i2c-master-tpm</instance_name>
+  <is_root>false</is_root>
+  <position>-1</position>
+  <type>unit-i2c-master</type>
+</targetPart>
+<targetPart>
+  <id>i2c-master-dpss</id>
+  <attribute>
+    <id>BUS_TYPE</id>
+    <default>I2C</default>
+  </attribute>
+  <attribute>
+    <id>CHIP_UNIT</id>
+    <default>0</default>
+  </attribute>
+  <attribute>
+    <id>CLASS</id>
+    <default>UNIT</default>
+  </attribute>
+  <attribute>
+    <id>DIRECTION</id>
+    <default>OUT</default>
+  </attribute>
+  <attribute>
+    <id>I2C_CONNECTION_TYPE</id>
+    <default>NA</default>
+  </attribute>
+  <attribute>
+    <id>I2C_ENGINE</id>
+    <default>0x01</default>
+  </attribute>
+  <attribute>
+    <id>I2C_PORT</id>
+    <default>0x0c</default>
+  </attribute>
+  <attribute>
+    <id>MRW_TYPE</id>
+    <default>NA</default>
+  </attribute>
+  <attribute>
+    <id>PRIMARY_CAPABILITIES</id>
+    <default>
+      <field>
+        <id>supportsFsiScom</id>
+        <value>1</value>
+      </field>
+      <field>
+        <id>supportsXscom</id>
+        <value>1</value>
+      </field>
+      <field>
+        <id>supportsInbandScom</id>
+        <value>0</value>
+      </field>
+      <field>
+        <id>reserved</id>
+        <value>0</value>
+      </field>
+    </default>
+  </attribute>
+  <attribute>
+    <id>RESOURCE_IS_CRITICAL</id>
+    <default>0</default>
+  </attribute>
+  <attribute>
+    <id>TYPE</id>
+    <default>NA</default>
+  </attribute>
+  <instance_name>i2c-master-dpss</instance_name>
+  <is_root>false</is_root>
+  <position>-1</position>
+  <type>unit-i2c-master</type>
   </targetPart>
   <targetPart>
     <id>i2c-master-op0a</id>
@@ -2183,7 +2387,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x04</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2215,7 +2419,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x05</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2247,7 +2451,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x06</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2279,7 +2483,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x07</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2311,7 +2515,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x08</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2343,7 +2547,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x09</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2375,7 +2579,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x0a</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2407,7 +2611,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x0b</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2439,7 +2643,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x0c</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2471,71 +2675,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
-    </attribute>
-    <attribute>
-      <id>TYPE</id>
-      <default>NA</default>
-    </attribute>
-    <instance_name>i2c-master-op5b</instance_name>
-    <is_root>false</is_root>
-    <parent>unit</parent>
-    <position>-1</position>
-    <type>unit-i2c-master</type>
-  </targetPart>
-  <targetPart>
-    <id>i2c-master-op0a</id>
-    <attribute>
-      <id>BUS_TYPE</id>
-      <default>I2C</default>
-    </attribute>
-    <attribute>
-      <id>CHIP_UNIT</id>
-      <default>0</default>
-    </attribute>
-    <attribute>
-      <id>DIRECTION</id>
-      <default>OUT</default>
-    </attribute>
-    <attribute>
-      <id>I2C_ENGINE</id>
-      <default>0x01</default>
-    </attribute>
-    <attribute>
-      <id>I2C_PORT</id>
-      <default>0x02</default>
-    </attribute>
-    <attribute>
-      <id>TYPE</id>
-      <default>NA</default>
-    </attribute>
-    <instance_name>i2c-master-op5a</instance_name>
-    <is_root>false</is_root>
-    <parent>unit</parent>
-    <position>-1</position>
-    <type>unit-i2c-master</type>
-  </targetPart>
-  <targetPart>
-    <id>i2c-master-op5b</id>
-    <attribute>
-      <id>BUS_TYPE</id>
-      <default>I2C</default>
-    </attribute>
-    <attribute>
-      <id>CHIP_UNIT</id>
-      <default>0</default>
-    </attribute>
-    <attribute>
-      <id>DIRECTION</id>
-      <default>OUT</default>
-    </attribute>
-    <attribute>
-      <id>I2C_ENGINE</id>
-      <default>0x01</default>
-    </attribute>
-    <attribute>
-      <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x0d</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2567,7 +2707,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x0e</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2599,7 +2739,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x0f</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2631,7 +2771,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x10</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2663,7 +2803,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x11</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2887,7 +3027,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x00</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2919,7 +3059,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x01</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2983,7 +3123,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x03</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -5162,9 +5302,12 @@
     <child_id>i2c-master-proc-promc2</child_id>
     <child_id>i2c-master-proc-promc3</child_id>
     <child_id>i2c-master-lightpath</child_id>
+    <child_id>i2c-master-hotplug</child_id>
+    <child_id>i2c-master-tpm</child_id>
+    <child_id>i2c-master-dpss</child_id>
     <child_id>i2c-master-pci</child_id>
-    <child_id>i2c-master-omi012</child_id>
-    <child_id>i2c-master-omi345</child_id>
+    <child_id>i2c-master-omi0123</child_id>
+    <child_id>i2c-master-omi4567</child_id>
     <child_id>i2c-master-op0a</child_id>
     <child_id>i2c-master-op0b</child_id>
     <child_id>i2c-master-op1a</child_id>
