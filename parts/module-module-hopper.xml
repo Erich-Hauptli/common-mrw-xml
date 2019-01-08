@@ -2115,7 +2115,7 @@
     </attribute>
     <attribute>
       <id>I2C_ENGINE</id>
-      <default>0x01</default>
+      <default>0x02</default>
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
@@ -2624,198 +2624,6 @@
     <type>unit-i2c-master</type>
   </targetPart>
   <targetPart>
-    <id>i2c-master-op5a</id>
-    <attribute>
-      <id>BUS_TYPE</id>
-      <default>I2C</default>
-    </attribute>
-    <attribute>
-      <id>CHIP_UNIT</id>
-      <default>0</default>
-    </attribute>
-    <attribute>
-      <id>DIRECTION</id>
-      <default>OUT</default>
-    </attribute>
-    <attribute>
-      <id>I2C_ENGINE</id>
-      <default>0x01</default>
-    </attribute>
-    <attribute>
-      <id>I2C_PORT</id>
-      <default>0x0c</default>
-    </attribute>
-    <attribute>
-      <id>TYPE</id>
-      <default>NA</default>
-    </attribute>
-    <instance_name>i2c-master-op5a</instance_name>
-    <is_root>false</is_root>
-    <parent>unit</parent>
-    <position>-1</position>
-    <type>unit-i2c-master</type>
-  </targetPart>
-  <targetPart>
-    <id>i2c-master-op5b</id>
-    <attribute>
-      <id>BUS_TYPE</id>
-      <default>I2C</default>
-    </attribute>
-    <attribute>
-      <id>CHIP_UNIT</id>
-      <default>0</default>
-    </attribute>
-    <attribute>
-      <id>DIRECTION</id>
-      <default>OUT</default>
-    </attribute>
-    <attribute>
-      <id>I2C_ENGINE</id>
-      <default>0x01</default>
-    </attribute>
-    <attribute>
-      <id>I2C_PORT</id>
-      <default>0x0d</default>
-    </attribute>
-    <attribute>
-      <id>TYPE</id>
-      <default>NA</default>
-    </attribute>
-    <instance_name>i2c-master-op5b</instance_name>
-    <is_root>false</is_root>
-    <parent>unit</parent>
-    <position>-1</position>
-    <type>unit-i2c-master</type>
-  </targetPart>
-  <targetPart>
-    <id>i2c-master-op6a</id>
-    <attribute>
-      <id>BUS_TYPE</id>
-      <default>I2C</default>
-    </attribute>
-    <attribute>
-      <id>CHIP_UNIT</id>
-      <default>0</default>
-    </attribute>
-    <attribute>
-      <id>DIRECTION</id>
-      <default>OUT</default>
-    </attribute>
-    <attribute>
-      <id>I2C_ENGINE</id>
-      <default>0x01</default>
-    </attribute>
-    <attribute>
-      <id>I2C_PORT</id>
-      <default>0x0e</default>
-    </attribute>
-    <attribute>
-      <id>TYPE</id>
-      <default>NA</default>
-    </attribute>
-    <instance_name>i2c-master-op6a</instance_name>
-    <is_root>false</is_root>
-    <parent>unit</parent>
-    <position>-1</position>
-    <type>unit-i2c-master</type>
-  </targetPart>
-  <targetPart>
-    <id>i2c-master-op6b</id>
-    <attribute>
-      <id>BUS_TYPE</id>
-      <default>I2C</default>
-    </attribute>
-    <attribute>
-      <id>CHIP_UNIT</id>
-      <default>0</default>
-    </attribute>
-    <attribute>
-      <id>DIRECTION</id>
-      <default>OUT</default>
-    </attribute>
-    <attribute>
-      <id>I2C_ENGINE</id>
-      <default>0x01</default>
-    </attribute>
-    <attribute>
-      <id>I2C_PORT</id>
-      <default>0x0f</default>
-    </attribute>
-    <attribute>
-      <id>TYPE</id>
-      <default>NA</default>
-    </attribute>
-    <instance_name>i2c-master-op6b</instance_name>
-    <is_root>false</is_root>
-    <parent>unit</parent>
-    <position>-1</position>
-    <type>unit-i2c-master</type>
-  </targetPart>
-  <targetPart>
-    <id>i2c-master-op7a</id>
-    <attribute>
-      <id>BUS_TYPE</id>
-      <default>I2C</default>
-    </attribute>
-    <attribute>
-      <id>CHIP_UNIT</id>
-      <default>0</default>
-    </attribute>
-    <attribute>
-      <id>DIRECTION</id>
-      <default>OUT</default>
-    </attribute>
-    <attribute>
-      <id>I2C_ENGINE</id>
-      <default>0x01</default>
-    </attribute>
-    <attribute>
-      <id>I2C_PORT</id>
-      <default>0x10</default>
-    </attribute>
-    <attribute>
-      <id>TYPE</id>
-      <default>NA</default>
-    </attribute>
-    <instance_name>i2c-master-op7a</instance_name>
-    <is_root>false</is_root>
-    <parent>unit</parent>
-    <position>-1</position>
-    <type>unit-i2c-master</type>
-  </targetPart>
-  <targetPart>
-    <id>i2c-master-op7b</id>
-    <attribute>
-      <id>BUS_TYPE</id>
-      <default>I2C</default>
-    </attribute>
-    <attribute>
-      <id>CHIP_UNIT</id>
-      <default>0</default>
-    </attribute>
-    <attribute>
-      <id>DIRECTION</id>
-      <default>OUT</default>
-    </attribute>
-    <attribute>
-      <id>I2C_ENGINE</id>
-      <default>0x01</default>
-    </attribute>
-    <attribute>
-      <id>I2C_PORT</id>
-      <default>0x11</default>
-    </attribute>
-    <attribute>
-      <id>TYPE</id>
-      <default>NA</default>
-    </attribute>
-    <instance_name>i2c-master-op7b</instance_name>
-    <is_root>false</is_root>
-    <parent>unit</parent>
-    <position>-1</position>
-    <type>unit-i2c-master</type>
-  </targetPart>
-  <targetPart>
     <id>i2c-master-proc-promb0</id>
     <attribute>
       <id>BUS_TYPE</id>
@@ -2835,7 +2643,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x00</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2867,7 +2675,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x00</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2899,7 +2707,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x00</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2931,7 +2739,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x00</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2963,7 +2771,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x00</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
@@ -2995,7 +2803,7 @@
     </attribute>
     <attribute>
       <id>I2C_PORT</id>
-      <default>0x02</default>
+      <default>0x00</default>
     </attribute>
     <attribute>
       <id>TYPE</id>
