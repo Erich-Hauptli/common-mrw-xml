@@ -16,22 +16,6 @@
     <type>unit-capp-axone</type>
   </targetPart>
   <targetPart>
-    <id>capp1</id>
-    <attribute>
-      <id>CHIP_UNIT</id>
-      <default>1</default>
-    </attribute>
-    <attribute>
-      <id>MODEL</id>
-      <default>AXONE</default>
-    </attribute>
-    <instance_name>capp1</instance_name>
-    <is_root>false</is_root>
-    <parent>unit-capp-power9</parent>
-    <position>-1</position>
-    <type>unit-capp-axone</type>
-  </targetPart>
-  <targetPart>
     <id>core0</id>
     <attribute>
       <id>CHIP_UNIT</id>
@@ -46,9 +30,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core0</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core1</id>
@@ -65,9 +49,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core1</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core10</id>
@@ -84,9 +68,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core10</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core11</id>
@@ -103,9 +87,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core11</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core12</id>
@@ -122,9 +106,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core12</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core13</id>
@@ -141,9 +125,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core13</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core14</id>
@@ -160,9 +144,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core14</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core15</id>
@@ -179,9 +163,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core15</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core16</id>
@@ -198,9 +182,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core16</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core17</id>
@@ -217,9 +201,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core17</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core18</id>
@@ -236,9 +220,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core18</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core19</id>
@@ -255,9 +239,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core19</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core2</id>
@@ -274,9 +258,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core2</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core20</id>
@@ -293,9 +277,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core20</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core21</id>
@@ -312,9 +296,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core21</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core22</id>
@@ -331,9 +315,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core22</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core23</id>
@@ -350,9 +334,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core23</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core3</id>
@@ -369,9 +353,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core3</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core4</id>
@@ -388,9 +372,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core4</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core5</id>
@@ -407,9 +391,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core5</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core6</id>
@@ -426,9 +410,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core6</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core7</id>
@@ -445,9 +429,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core7</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core8</id>
@@ -464,9 +448,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core8</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>core9</id>
@@ -483,9 +467,9 @@
     <hidden_child_id>cpucore_freq_sensor</hidden_child_id>
     <instance_name>core9</instance_name>
     <is_root>false</is_root>
-    <parent>unit</parent>
+    <parent>unit-core-power9</parent>
     <position>-1</position>
-    <type>unit-core-power9</type>
+    <type>unit-core-axone</type>
   </targetPart>
   <targetPart>
     <id>cpu_func_sensor</id>
@@ -3957,6 +3941,16 @@
       <id>TYPE</id>
       <default>NA</default>
     </attribute>
+    <attribute>
+      <id>FRU_ID</id>
+      <default/>
+    </attribute>
+    <attribute>
+      <id>FRU_NAME</id>
+    </attribute>
+    <attribute>
+      <id>IPMI_INSTANCE</id>
+    </attribute>
     <child_id>p9_axone</child_id>
     <instance_name>module</instance_name>
     <is_root>true</is_root>
@@ -4995,7 +4989,6 @@
     <child_id>occ</child_id>
     <child_id>nx</child_id>
     <child_id>capp0</child_id>
-    <child_id>capp1</child_id>
     <child_id>sbe</child_id>
     <child_id>mc0</child_id>
     <child_id>mc1</child_id>

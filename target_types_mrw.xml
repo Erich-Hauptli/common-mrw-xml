@@ -201,6 +201,20 @@
 		</attribute>
 	</targetType>
 	<targetType>
+		<id>unit-core-power9</id>
+		<parent>unit</parent>
+		<attribute>
+			<id>TYPE</id>
+			<default>CORE</default>
+		</attribute>
+		<attribute>
+			<id>IPMI_INSTANCE</id>
+		</attribute>
+		<attribute>
+			<id>FRU_NAME</id>
+		</attribute>
+	</targetType>
+	<targetType>
 		<id>unit-core-venice</id>
 		<parent>unit-core-power8</parent>
 		<attribute>

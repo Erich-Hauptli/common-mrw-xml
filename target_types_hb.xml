@@ -660,6 +660,16 @@
     <attribute>
       <id>NO_APSS_PROC_POWER_VCS_VIO_WATTS</id>
     </attribute>
+    <attribute>
+      <id>FRU_ID</id>
+      <default/>
+    </attribute>
+    <attribute>
+      <id>FRU_NAME</id>
+    </attribute>
+    <attribute>
+      <id>IPMI_INSTANCE</id>
+    </attribute>
     <id>chip-processor-power9</id>
     <parent>chip-processor</parent>
   </targetType>
@@ -2364,6 +2374,9 @@
     </attribute>
     <attribute>
       <id>IPMI_SENSORS</id>
+    </attribute>
+    <attribute>
+      <id>IPMI_INSTANCE</id>
     </attribute>
     <id>unit-occ-power9</id>
     <parent>unit</parent>
